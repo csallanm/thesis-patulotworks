@@ -1,0 +1,17 @@
+#login_shape1 {
+    background-color: #f3f3f3;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("assets/bg1.png");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
