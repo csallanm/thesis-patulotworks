@@ -1,0 +1,79 @@
+.nav-pills .nav-link .focus {
+  color: #b9b9b9;
+  /* Default text color for inactive pills */
+}
+
+.nav-pills .nav-link.active {
+  color: #fff;
+  /* Text color for active pill */
+  background-color: rgb(183, 0, 0);
+  /* Background color for active pill */
+}
+
+#imgsize1 {
+  width: 75px;
+}
+
+@media (max-width: 767.98px) {
+  .dropdown-menu {
+    position: absolute !important;
+    float: none !important;
+    width: auto !important;
+    margin-top: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+}
+
+html,
+body {
+  /*moves the body of the website */
+  max-width: 100%;
+  /* overflow-x: hidden;*/
+  padding-top: 45px;
+  background-image: url('assets/bg1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#shape1 {
+  /* shape size for individual shapes with id (located in HTML) */
+  background-color: #4e0000;
+  color: white;
+  border: none;
+}
+
+#shape2 {
+  background-color: #f3f3f3;
+  border: none;
+}
+
+#studshape {
+  /* shape size for individual shapes with id (located in HTML) */
+  background-color: #4e0000;
+  color: white;
+  border: none;
+  transition: background-color 0.5s ease;
+}
+
+#studshape:hover {
+  /* shape size for individual shapes with id (located in HTML) */
+  background-color: #2b0000;
+  color: white;
+  border: none;
+}
+
+#con1 {
+  /* Custom container size */
+  position: absolute;
+  left: 1%;
+  width: 375px;
+}
+
+#con2 {
+  position: absolute;
+  display: block;
+  left: 12cm;
+}
