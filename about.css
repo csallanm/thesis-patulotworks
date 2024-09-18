@@ -7,6 +7,7 @@ body {
     height: 100vh;
     background-color: #f0f0f000;
     margin: 0;
+    overflow-x: hidden;  /* Hide scrollbars */
 }
 
 .chatbox {
@@ -16,6 +17,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0);
     padding: 10px;
     overflow-y: auto;
+    scrollbar-width: none; 
     max-height: 60vh;
     text-align: center;
 }

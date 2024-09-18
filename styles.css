@@ -12,11 +12,12 @@ body {
 .chatbox {
     width: 300px;
     max-width: 100%;
-    background: #fff;
+    background: #d35656;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 10px;
     overflow-y: auto;
+    scrollbar-width: none; 
     max-height: 60vh;
 }
 
@@ -49,7 +50,7 @@ body {
 
 .chat-bubble.user::after {
     border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent #007bff;
+    border-color: transparent transparent transparent #0d2f53;
     top: 10px;
     right: -10px;
 }
