@@ -46,7 +46,7 @@ if ($email == false) {
                     <?php
                     if (isset($_SESSION['info'])) {
                     ?>
-                        <p class="text-success"></p>
+                        <p class="text-success">
                         <?php echo $_SESSION['info']; ?>
                         </p>
                     <?php
@@ -70,8 +70,8 @@ if ($email == false) {
                         </div>
                     </div>
             </div>
-            </form>
         </div>
+        </form>
     </div>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>

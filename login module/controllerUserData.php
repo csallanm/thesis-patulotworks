@@ -113,7 +113,7 @@ if (isset($_POST['check-email'])) {
         $run_query =  mysqli_query($con, $insert_code);
         if ($run_query) {
             $subject = "EUC SAS - Update Password";
-            $message = "Hello $name! Your password reset code is $code";
+            $message = "Hello! Your password reset code is $code";
             $sender = "From: mail@domain.com";
             if (mail($email, $subject, $message, $sender)) {
                 $info = "Email sent to \"$email\" for password reset.";

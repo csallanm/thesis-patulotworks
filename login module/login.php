@@ -1,10 +1,10 @@
-<?php require_once "controllerUserData.php";?>
+<?php require_once "controllerUserData.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=devicen-width, initial-scale=1.0">
   <title>Login - Student Archiving System</title>
   <link rel="icon" type="image/x-icon" href="assets/euC.png">
   <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -59,10 +59,10 @@
             <div class="col-md-6">
               <button class="btn btn-secondary" name="btn_fpassword" id="btn_fpassword" onclick="window.location.href='forgotpassword.php'">Forgot Password</button>
             </div>
+          </div>
         </form>
       </div>
     </div>
-  </div>
   </div>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>

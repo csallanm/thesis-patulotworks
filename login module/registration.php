@@ -85,8 +85,8 @@
 
                     <input class="form-control button btn btn-secondary" type="submit" name="signup" value="Register">
             </div>
+            </form>
         </div>
-        </form>
     </div>
 
 
