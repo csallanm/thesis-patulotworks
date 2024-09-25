@@ -3,78 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clickable Chatbox</title>
+    <title>Clickable Chat Box</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar fixed-top navbar-expand navbar-dark shadow-lg p-3" style="background-color: #4e0000;">
-      <!-- Navbar content -->
-      <img class="mx-3" src="euC.png" alt="hugenerd" width="30" height="30">
-      <ul class="navbar-nav nav-pills mr-auto">
-        <li class="nav-item">
-          <a class="nav-link mx-2" href="homepage.html">Home</a>
+  
+  <nav class="navbar fixed-top navbar-expand navbar-dark shadow-lg p-3" style="background-color: #4e0000;">
+    <!-- Navbar content -->
+    <img class="mx-3" src="assets/euC.png" alt="hugenerd" width="30" height="30">
+    <ul class="navbar-nav nav-pills mr-auto">
+      <li class="nav-item">
+        <a class="nav-link active mx-2" href="homepage.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link mx-2" href="students.html">Students</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link mx-2" href="https://mseuf.edu.ph/">MSEUF Website</a>
+      </li>
+    </ul>
+      <div class="dropdown-pr4 ms-auto">
+        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle mx-3" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="/assets/user-icon-2048x2048-ihoxz4vq.png" alt="hugenerd" width="30" height="30" class="rounded-circle">
+          <span class="d-none d-sm-inline mx-2" style="text-decoration: none; color: white;">User</span>
+      </a>
+      <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark text-small shadow" aria-labelledby="dropdownMenuButton">
+        <li><a class="dropdown-item" href="chatbox.html">Help Desk</a></li>
+        <li><a class="dropdown-item" href="about.html">About</a></li>
+        <li>
+            <hr class="dropdown-divider">
         </li>
-        <li class="nav-item">
-          <a class="nav-link mx-2" href="students.html">Students</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link mx-2" href="https://mseuf.edu.ph/">MSEUF Website</a>
-        </li>
-      </ul>
-        <div class="dropdown-pr4 ms-auto">
-          <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle mx-3" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="/assets/user-icon-2048x2048-ihoxz4vq.png" alt="hugenerd" width="30" height="30" class="rounded-circle">
-            <span class="d-none d-sm-inline mx-2" style="text-decoration: none; color: white;">User</span>
-        </a>
-        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark text-small shadow" aria-labelledby="dropdownMenuButton">
-          <li><a class="dropdown-item" href="helpdesk.html">Help Desk</a></li>
-          <li><a class="dropdown-item" href="#">About</a></li>
-          <li>
-              <hr class="dropdown-divider">
-          </li>
-          <li><a class="dropdown-item" href="#">Sign out</a></li>
-      </ul>
-        </div>
-      
-    </nav>
-    <div class="chatbox">
-        <div class="chat-bubble user" onclick="showMessage('Hello! this is a registrar website')">
-            <p>Hello! How can I help you today?</p>
-        </div>
-        <div class="chat-bubble bot" onclick="showMessage('Hi! I need some information about your services.')">
-            <p>Hi! I need some information about your services.</p>
-        </div>
-        <div class="chat-bubble user" onclick="showMessage('Hello! this is a registrar website')">
-            <p>Hello! How can I help you today?</p>
-        </div>
-        <div class="chat-bubble bot" onclick="showMessage('Hi! I need some information about your services.')">
-            <p>Hi! I need some information about your services.</p>
-        </div>
+        <li><a class="dropdown-item" href="#">Sign out</a></li>
+    </ul>
+      </div>
+    
+  </nav>
+  <div id='bodybox'>
+    <div id='chatboarder'>
+      <p id="chatlog7" class="chatlog">&nbsp;</p>
+      <p id="chatlog6" class="chatlog">&nbsp;</p>
+      <p id="chatlog5" class="chatlog">&nbsp;</p>
+      <p id="chatlog4" class="chatlog">&nbsp;</p>
+      <p id="chatlog3" class="chatlog">&nbsp;</p>
+      <p id="chatlog2" class="chatlog">&nbsp;</p>
+      <p id="chatlog1" class="chatlog">&nbsp;</p>
+      <input type="text" name="chat" id="chatbox" placeholder= "Hi there! Type here to talk to me." >
     </div>
-    <div class="input-box">
-        <input type="text" id="userInput" placeholder="Type a message...">
-        <button onclick="sendMessage()">Send</button>
-    </div>
+    <br>
+    <br>
+    <h2>What to type</h2>
+     <ul style="list-style-type:disc">
+      <li>Hi</li>
+      <li>Who are the creator of this website</li>
 
-    <script>
-        function showMessage(message) {
-            alert(message);
-        }
+      <li>HAMSTER</li>
+      <li>Chris we gotta go</li>
+      <li>CHRIS!</li>
+      <li>why were you late</li>
+      <li>why were you not at school</li>
+      <li>what time is it</li>
+      <li>Bro you wanna hang today</li>
+      <li>Put on a song</li>
+      <li>hey man can you pick us up</li>
+      <li>dude where are you</li>
+      <li>dude freestyle</li>
+      <li>DUDE</li>
+    
+    
+  </div>  <br>
+    <br>
 
-        function sendMessage() {
-            const input = document.getElementById('userInput');
-            const message = input.value;
-            if (message.trim() !== '') {
-                const chatbox = document.querySelector('.chatbox');
-                const userBubble = document.createElement('div');
-                userBubble.className = 'chat-bubble user';
-                userBubble.onclick = () => showMessage(message);
-                userBubble.innerHTML = `<p>${message}</p>`;
-                chatbox.appendChild(userBubble);
-                input.value = '';
-                chatbox.scrollTop = chatbox.scrollHeight;
-            }
-        }
-    </script>
+  </div>
+    <script src="script.js"></script>
 </body>
 </html>
