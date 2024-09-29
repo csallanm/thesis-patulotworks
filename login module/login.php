@@ -1,6 +1,16 @@
-<?php require_once "controllerUserData.php"; ?>
+<?php require_once "controllerUserData.php";
+
+// Middleware: Check if the user is already logged in
+if (isset($_SESSION['email']) && !empty($_SESSION['password']) ) {
+  header("Location: homepage.php");
+}
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
+
+
 
 <head>
   <meta charset="UTF-8">

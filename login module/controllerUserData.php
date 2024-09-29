@@ -142,7 +142,7 @@ if (isset($_POST['check-reset-otp'])) {
         $fetch_data = mysqli_fetch_assoc($code_res);
         $email = $fetch_data['email'];
         $_SESSION['email'] = $email;
-        $info = "Chang your password. Strong passwords are highly encouraged.";
+        $info = "Change your password. Strong passwords are highly encouraged.";
         $_SESSION['info'] = $info;
         header('location: changepassword.php');
         exit();
